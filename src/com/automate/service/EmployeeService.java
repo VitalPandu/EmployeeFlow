@@ -29,7 +29,7 @@ public class EmployeeService {
             employeeRepository.delete(identifier);
     }
 
-    public Collection listOfEmployess(){
+    public Collection listOfEmployees(){
         return employeeRepository.listingEmployes();
     }
 }
