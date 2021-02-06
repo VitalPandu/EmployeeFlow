@@ -31,35 +31,35 @@ public class UIConsole {
 
         switch (userChoice) {
             case 1:
-                employeeController.createEmployee(getEmployeeName(), getEmployeeAge(), getEmployeeSalary());
+                employeeController.createEmployee(takeEmployeeName(), takeEmployeeAge(), takeEmployeeSalary());
                 break;
             case 2:
-                employeeController.update(getEmployeeIdentifier(),getEmployeeName(),getEmployeeAge(),getEmployeeSalary());
+                employeeController.update(takeEmployeeIdentifier(), takeEmployeeName(), takeEmployeeAge(), takeEmployeeSalary());
                 break;
             case 3:
                 out.println("Enter Id to delete");
                 employeeController.delete(sc.nextInt());
                 break;
             case 4:
-                out.println("List of Employees in the System are : "+employeeController.listOfEmployees());
+                out.println("List of Employees in the System are : " + employeeController.listOfEmployees());
                 break;
         }
     }
 
-    private static int getEmployeeIdentifier() {
+    private static int takeEmployeeIdentifier() {
         out.println("Enter ID to update");
         return sc.nextInt();
     }
 
-    private static int getEmployeeSalary() {
+    private static int takeEmployeeSalary() {
         out.println("Enter Salary:");
         return sc.nextInt();
                   }
-    private static String getEmployeeName(){
+    private static String takeEmployeeName(){
         out.println("Enter Name:");
         return (sc.next());
     }
-    private static int getEmployeeAge(){
+    private static int takeEmployeeAge(){
         out.println("Enter Age:");
         return sc.nextInt();
     }

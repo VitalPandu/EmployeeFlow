@@ -1,7 +1,6 @@
 package com.automate.controller;
 
 import com.automate.service.EmployeeService;
-
 import java.util.Collection;
 
 public class EmployeeController {

@@ -30,6 +30,6 @@ public class EmployeeService {
     }
 
     public Collection listOfEmployees(){
-        return employeeRepository.listingEmployes();
+        return employeeRepository.listingEmployees();
     }
 }

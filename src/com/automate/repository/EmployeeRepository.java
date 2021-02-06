@@ -13,6 +13,7 @@ public class EmployeeRepository {
          employeeData.put(identifier,employee);
              }
 
+
         public Employee retrive(int identifier) {
         return employeeData.get(identifier);
         }
@@ -22,8 +23,10 @@ public class EmployeeRepository {
             employeeData.remove(identifier);
             return true;
         }
-        public Collection listingEmployes(){
+
+        public Collection listingEmployees(){
             return employeeData.values();
+
         }
 }
 
